@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end 
   
   get '/new' do 
-  
+    @putinay_input = PigLatinizer.new.to_pig_latin(params[:user_phrase])
   end
 
 end
