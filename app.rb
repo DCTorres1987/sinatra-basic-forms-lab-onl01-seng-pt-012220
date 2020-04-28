@@ -7,11 +7,11 @@ class App < Sinatra::Base
   end 
   
   get '/new' do 
-    @putinay_input = PigLatinizer.new.to_pig_latin(params[:user_phrase])
+    @new = PigLatinizer.new.to_pig_latin(params[:user_phrase])
   end
   
   post '/puppy' do 
-  
+    erb :display_puppy
   end
 
 end
