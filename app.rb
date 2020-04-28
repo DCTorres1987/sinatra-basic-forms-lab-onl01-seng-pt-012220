@@ -7,7 +7,13 @@ class App < Sinatra::Base
   end 
   
   get '/new' do 
-    @new = PigLatinizer.new.to_pig_latin(params[:user_phrase])
+    @name =  params["name"]
+    @coach = params["coach"]
+    @pg =    params["pg"]
+    @sg =    params["sg"]
+    @pf =    params["pf"]
+    @sf =    params["sf"]
+    @c =     params["c"]
   end
   
   post '/puppy' do 
