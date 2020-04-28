@@ -9,5 +9,9 @@ class App < Sinatra::Base
   get '/new' do 
     @putinay_input = PigLatinizer.new.to_pig_latin(params[:user_phrase])
   end
+  
+  post '/puppy' do 
+  
+  end
 
 end
