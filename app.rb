@@ -7,13 +7,7 @@ class App < Sinatra::Base
   end 
   
   get '/new' do 
-    @name =  params["name"]
-    @breed = params["breed"]
-    @pg =    params["pg"]
-    @sg =    params["sg"]
-    @pf =    params["pf"]
-    @sf =    params["sf"]
-    @c =     params["c"]
+    
   end
   
   post '/puppy' do 
