@@ -8,7 +8,7 @@ class App < Sinatra::Base
   
   get '/new' do 
     @name =  params["name"]
-    @coach = params["coach"]
+    @breed = params["breed"]
     @pg =    params["pg"]
     @sg =    params["sg"]
     @pf =    params["pf"]
